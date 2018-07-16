@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Teste Suite]">
+  <test thread-count="5" name="Teste(failed)">
+    <classes>
+      <class name="testclasses.TestNGSoftAssert">
+        <methods>
+          <include name="testSum"/>
+        </methods>
+      </class> <!-- testclasses.TestNGSoftAssert -->
+    </classes>
+  </test> <!-- Teste(failed) -->
+</suite> <!-- Failed suite [Teste Suite] -->

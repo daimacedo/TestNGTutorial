@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Teste Suite">
+	<test name="Teste">
+		<classes>
+			<class name="testclasses.TestNGAssert"></class>
+			<class name="testclasses.TestNGSoftAssert"></class>
+		</classes>
+	</test>
+</suite>
