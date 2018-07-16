@@ -18,6 +18,7 @@ public class TestNGSoftAssert {
 		System.out.println("\nLine after assert 1");
 		sa.assertEquals(result, 3);
 		System.out.println("\nLine after assert 2");
+		// force the test fails in case one SoftAssert pass
 		sa.assertAll();
 	}
 
