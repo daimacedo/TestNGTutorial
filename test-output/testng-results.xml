@@ -1,63 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+<testng-results skipped="0" failed="0" ignored="2" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suit Dependent Methods" duration-ms="145" started-at="2018-07-18T12:55:37Z" finished-at="2018-07-18T12:55:38Z">
+  <suite name="Suit Dependent Methods" duration-ms="7" started-at="2018-07-18T16:33:05Z" finished-at="2018-07-18T16:33:05Z">
     <groups>
     </groups>
-    <test name="Dependent Methods" duration-ms="145" started-at="2018-07-18T12:55:37Z" finished-at="2018-07-18T12:55:38Z">
+    <test name="Dependent Methods" duration-ms="7" started-at="2018-07-18T16:33:05Z" finished-at="2018-07-18T16:33:05Z">
       <class name="dependentMethods.DependentMethods">
-        <test-method status="PASS" signature="runBeforeSuite()[pri:0, instance:dependentMethods.DependentMethods@51565ec2]" name="runBeforeSuite" is-config="true" duration-ms="9" started-at="2018-07-18T12:55:37Z" finished-at="2018-07-18T12:55:37Z">
+        <test-method status="PASS" signature="runBeforeSuite()[pri:0, instance:dependentMethods.DependentMethods@482f8f11]" name="runBeforeSuite" is-config="true" duration-ms="15" started-at="2018-07-18T16:33:05Z" finished-at="2018-07-18T16:33:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runBeforeSuite -->
-        <test-method status="PASS" signature="runOnceBeforeTagTest()[pri:0, instance:dependentMethods.DependentMethods@51565ec2]" name="runOnceBeforeTagTest" is-config="true" duration-ms="0" started-at="2018-07-18T12:55:37Z" finished-at="2018-07-18T12:55:37Z">
+        <test-method status="PASS" signature="runOnceBeforeTagTest()[pri:0, instance:dependentMethods.DependentMethods@482f8f11]" name="runOnceBeforeTagTest" is-config="true" duration-ms="0" started-at="2018-07-18T16:33:05Z" finished-at="2018-07-18T16:33:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runOnceBeforeTagTest -->
-        <test-method status="PASS" signature="BeforeMethods()[pri:0, instance:dependentMethods.DependentMethods@51565ec2]" name="BeforeMethods" is-config="true" duration-ms="0" started-at="2018-07-18T12:55:37Z" finished-at="2018-07-18T12:55:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethods -->
-        <test-method status="PASS" signature="testMethod2()[pri:0, instance:dependentMethods.DependentMethods@51565ec2]" name="testMethod2" duration-ms="6" started-at="2018-07-18T12:55:37Z" finished-at="2018-07-18T12:55:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMethod2 -->
-        <test-method status="PASS" signature="AfterMethods()[pri:0, instance:dependentMethods.DependentMethods@51565ec2]" name="AfterMethods" is-config="true" duration-ms="0" started-at="2018-07-18T12:55:37Z" finished-at="2018-07-18T12:55:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethods -->
-        <test-method status="PASS" signature="BeforeMethods()[pri:0, instance:dependentMethods.DependentMethods@51565ec2]" name="BeforeMethods" is-config="true" duration-ms="0" started-at="2018-07-18T12:55:37Z" finished-at="2018-07-18T12:55:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethods -->
-        <test-method status="FAIL" signature="testMethod1()[pri:0, instance:dependentMethods.DependentMethods@51565ec2]" name="testMethod1" duration-ms="114" started-at="2018-07-18T12:55:37Z" depends-on-methods="dependentMethods.DependentMethods.testMethod2" finished-at="2018-07-18T12:55:38Z">
-          <exception class="org.testng.internal.thread.ThreadTimeoutException">
-            <message>
-              <![CDATA[Method dependentMethods.DependentMethods.testMethod1() didn't finish within the time-out 100]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.internal.thread.ThreadTimeoutException: Method dependentMethods.DependentMethods.testMethod1() didn't finish within the time-out 100
-at java.util.concurrent.FutureTask.setException(FutureTask.java:248)
-at java.util.concurrent.FutureTask.run(FutureTask.java:271)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-at java.lang.Thread.run(Thread.java:748)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.internal.thread.ThreadTimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMethod1 -->
-        <test-method status="PASS" signature="AfterMethods()[pri:0, instance:dependentMethods.DependentMethods@51565ec2]" name="AfterMethods" is-config="true" duration-ms="0" started-at="2018-07-18T12:55:38Z" finished-at="2018-07-18T12:55:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethods -->
-        <test-method status="PASS" signature="runOnceAfterTagTest()[pri:0, instance:dependentMethods.DependentMethods@51565ec2]" name="runOnceAfterTagTest" is-config="true" duration-ms="0" started-at="2018-07-18T12:55:38Z" finished-at="2018-07-18T12:55:38Z">
+        <test-method status="PASS" signature="runOnceAfterTagTest()[pri:0, instance:dependentMethods.DependentMethods@482f8f11]" name="runOnceAfterTagTest" is-config="true" duration-ms="0" started-at="2018-07-18T16:33:05Z" finished-at="2018-07-18T16:33:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runOnceAfterTagTest -->
-        <test-method status="PASS" signature="runAfterSuite()[pri:0, instance:dependentMethods.DependentMethods@51565ec2]" name="runAfterSuite" is-config="true" duration-ms="1" started-at="2018-07-18T12:55:38Z" finished-at="2018-07-18T12:55:38Z">
+        <test-method status="PASS" signature="runAfterSuite()[pri:0, instance:dependentMethods.DependentMethods@482f8f11]" name="runAfterSuite" is-config="true" duration-ms="0" started-at="2018-07-18T16:33:05Z" finished-at="2018-07-18T16:33:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runAfterSuite -->

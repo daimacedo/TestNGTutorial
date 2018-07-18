@@ -2,6 +2,7 @@ package dependentMethods;
 
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
 public class DependentMethods extends Base {
@@ -17,6 +18,7 @@ public class DependentMethods extends Base {
 		System.out.println("Running after methods");
 	}
 	
+	@Ignore
 	@Test(dependsOnMethods= {"testMethod2"}, timeOut=100)
 	public void testMethod1() throws InterruptedException{
 		
@@ -25,9 +27,9 @@ public class DependentMethods extends Base {
 	
 	}
 	
-	@Test
+	@Test(enabled=false)
 	public void testMethod2(){
-		System.out.println("Running TestMethod1");
+		System.out.println("Running TestMethod2");
 		
 	}
 }
