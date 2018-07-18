@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name = "Working with groups">
+	<test name = "Test Groups">
+		<groups>
+			<run>
+				<include name="bikes"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name= "groups.TestNGGroups"></class>
+		</classes>
+	</test>
+</suite>
