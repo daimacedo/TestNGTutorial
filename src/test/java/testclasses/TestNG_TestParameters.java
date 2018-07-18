@@ -17,8 +17,12 @@ public class TestNG_TestParameters {
 	@Parameters({"response"})
 	@Test
 	public void test1(String _response) {
+		
+		String[] stringArray = _response.split(",");
 		System.out.println("test1");
-		System.out.println("Parameter response from xml file: " + _response);
+		for(int i=0; i<stringArray.length;i++) {
+			System.out.println("Parameter response from xml file: " + stringArray[i]);
+		}
 	}
 
 }

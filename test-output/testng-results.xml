@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Test Parameters" duration-ms="42" started-at="2018-07-18T17:17:00Z" finished-at="2018-07-18T17:17:00Z">
+  <suite name="Test Parameters" duration-ms="51" started-at="2018-07-18T17:38:21Z" finished-at="2018-07-18T17:38:21Z">
     <groups>
     </groups>
-    <test name="Test Parameters" duration-ms="42" started-at="2018-07-18T17:17:00Z" finished-at="2018-07-18T17:17:00Z">
+    <test name="Test Parameters" duration-ms="51" started-at="2018-07-18T17:38:21Z" finished-at="2018-07-18T17:38:21Z">
       <class name="testclasses.TestNG_TestParameters">
-        <test-method status="PASS" signature="SetUp(java.lang.String, java.lang.String)[pri:0, instance:testclasses.TestNG_TestParameters@28feb3fa]" name="SetUp" is-config="true" duration-ms="13" started-at="2018-07-18T17:17:00Z" finished-at="2018-07-18T17:17:00Z">
+        <test-method status="PASS" signature="SetUp(java.lang.String, java.lang.String)[pri:0, instance:testclasses.TestNG_TestParameters@28feb3fa]" name="SetUp" is-config="true" duration-ms="13" started-at="2018-07-18T17:38:21Z" finished-at="2018-07-18T17:38:21Z">
           <params>
             <param index="0">
               <value>
@@ -23,11 +23,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method status="PASS" signature="test1(java.lang.String)[pri:0, instance:testclasses.TestNG_TestParameters@28feb3fa]" name="test1" duration-ms="6" started-at="2018-07-18T17:17:00Z" finished-at="2018-07-18T17:17:00Z">
+        <test-method status="PASS" signature="test1(java.lang.String)[pri:0, instance:testclasses.TestNG_TestParameters@28feb3fa]" name="test1" duration-ms="7" started-at="2018-07-18T17:38:21Z" finished-at="2018-07-18T17:38:21Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[201]]>
+                <![CDATA[201,202,203]]>
               </value>
             </param>
           </params>

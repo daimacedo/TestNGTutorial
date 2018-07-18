@@ -2,7 +2,7 @@
 <suite name = "Test Parameters">
 <parameter name="browser" value="chrome"></parameter>
 <parameter name="SO" value="linux"></parameter>
-<parameter name="response" value="201"></parameter>
+<parameter name="response" value="201,202,203"></parameter>
 	<test name = "Test Parameters">
 		<classes>
 			<class name="testclasses.TestNG_TestParameters"></class>
