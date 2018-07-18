@@ -37,8 +37,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" class="navigator-link" panel-name="suite-Suit_Dependent_Methods">
-              <span class="suite-name border-passed">Suit Dependent Methods</span>
+            <a href="#" class="navigator-link" panel-name="suite-Test_Parameters">
+              <span class="suite-name border-passed">Test Parameters</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,37 +48,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="test-xml-Suit_Dependent_Methods">
-                    <span>DependenteMethods.xml</span>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Test_Parameters">
+                    <span>Parameters.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="testlist-Suit_Dependent_Methods">
+                  <a href="#" class="navigator-link " panel-name="testlist-Test_Parameters">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="group-Suit_Dependent_Methods">
+                  <a href="#" class="navigator-link " panel-name="group-Test_Parameters">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="times-Suit_Dependent_Methods">
+                  <a href="#" class="navigator-link " panel-name="times-Test_Parameters">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="reporter-Suit_Dependent_Methods">
+                  <a href="#" class="navigator-link " panel-name="reporter-Test_Parameters">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suit_Dependent_Methods">
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Test_Parameters">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="chronological-Suit_Dependent_Methods">
+                  <a href="#" class="navigator-link " panel-name="chronological-Test_Parameters">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">0 methods,   </span>
+                    <span class="method-stats">1 method,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Test_Parameters" class="hide-methods passed suite-Test_Parameters"> (hide)</a> <!-- hide-methods passed suite-Test_Parameters -->
+                      <a href="#" panel-name="suite-Test_Parameters" class="show-methods passed suite-Test_Parameters"> (show)</a> <!-- show-methods passed suite-Test_Parameters -->
+                    </span>
+                    <div class="method-list-content passed suite-Test_Parameters">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Parameters" title="testclasses.TestNG_TestParameters" hash-for-method="test1(201)">test1(201)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Test_Parameters -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -102,115 +116,122 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Suit_Dependent_Methods" class="panel Suit_Dependent_Methods">
-        </div> <!-- panel Suit_Dependent_Methods -->
-        <div panel-name="test-xml-Suit_Dependent_Methods" class="panel">
+        <div panel-name="suite-Test_Parameters" class="panel Test_Parameters">
+          <div class="suite-Test_Parameters-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testclasses.TestNG_TestParameters</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test1(201)">
+                  </a> <!-- test1(201) -->
+                  <span class="method-name">test1</span>
+                  <span class="parameters">(201)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test_Parameters-class-passed -->
+        </div> <!-- panel Test_Parameters -->
+        <div panel-name="test-xml-Test_Parameters" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/home/daiane.macedo/workspace2/TestNGTutorial/DependenteMethods.xml</span>
+            <span class="header-content">/home/daiane.macedo/workspace2/TestNGTutorial/Parameters.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suit Dependent Methods&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Dependent Methods&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Test Parameters&quot;&gt;
+  &lt;parameter name=&quot;response&quot; value=&quot;201&quot;/&gt;
+  &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+  &lt;parameter name=&quot;SO&quot; value=&quot;linux&quot;/&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test Parameters&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;dependentMethods.DependentMethods&quot;/&gt;
+      &lt;class name=&quot;testclasses.TestNG_TestParameters&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Dependent Methods --&gt;
-&lt;/suite&gt; &lt;!-- Suit Dependent Methods --&gt;
+  &lt;/test&gt; &lt;!-- Test Parameters --&gt;
+&lt;/suite&gt; &lt;!-- Test Parameters --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Suit_Dependent_Methods" class="panel">
+        <div panel-name="testlist-Test_Parameters" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Suit Dependent Methods</span>
+            <span class="header-content">Tests for Test Parameters</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Dependent Methods (1 class)</span>
+                <span class="test-name">Test Parameters (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Suit_Dependent_Methods" class="panel">
+        <div panel-name="group-Test_Parameters" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Suit Dependent Methods</span>
+            <span class="header-content">Groups for Test Parameters</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Suit_Dependent_Methods" class="panel">
+        <div panel-name="times-Test_Parameters" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Suit Dependent Methods</span>
+            <span class="header-content">Times for Test Parameters</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Suit_Dependent_Methods');
-function tableData_Suit_Dependent_Methods() {
+suiteTableInitFunctions.push('tableData_Test_Parameters');
+function tableData_Test_Parameters() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(0);
-window.suiteTableData['Suit_Dependent_Methods']= { tableData: data, tableDiv: 'times-div-Suit_Dependent_Methods'}
+data.addRows(1);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'test1')
+data.setCell(0, 2, 'testclasses.TestNG_TestParameters')
+data.setCell(0, 3, 6);
+window.suiteTableData['Test_Parameters']= { tableData: data, tableDiv: 'times-div-Test_Parameters'}
 return data;
 }
               </script>
-              <div id="times-div-Suit_Dependent_Methods">
-              </div> <!-- times-div-Suit_Dependent_Methods -->
+              <span class="suite-total-time">Total running time: 6 ms</span>
+              <div id="times-div-Test_Parameters">
+              </div> <!-- times-div-Test_Parameters -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Suit_Dependent_Methods" class="panel">
+        <div panel-name="reporter-Test_Parameters" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Suit Dependent Methods</span>
+            <span class="header-content">Reporter output for Test Parameters</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Suit_Dependent_Methods" class="panel">
+        <div panel-name="ignored-methods-Test_Parameters" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">dependentMethods.DependentMethods</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">testMethod2</span>
-                <br/>
-                <span class="ignored-method-name">testMethod1</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Suit_Dependent_Methods" class="panel">
+        <div panel-name="chronological-Test_Parameters" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">dependentMethods.DependentMethods</div> <!-- chronological-class-name -->
-              <div class="configuration-suite before">
-                <span class="method-name">runBeforeSuite</span>
+              <div class="chronological-class-name">testclasses.TestNG_TestParameters</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">SetUp(chrome, linux)</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-suite before -->
-              <div class="configuration-test before">
-                <span class="method-name">runOnceBeforeTagTest</span>
-                <span class="method-start">19 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="configuration-test after">
-                <span class="method-name">runOnceAfterTagTest</span>
-                <span class="method-start">23 ms</span>
-              </div> <!-- configuration-test after -->
-              <div class="configuration-suite after">
-                <span class="method-name">runAfterSuite</span>
-                <span class="method-start">58 ms</span>
-              </div> <!-- configuration-suite after -->
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">test1(201)</span>
+                <span class="method-start">21 ms</span>
+              </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

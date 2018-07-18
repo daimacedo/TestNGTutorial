@@ -3,12 +3,6 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Teste Suite]">
   <test thread-count="5" name="Teste(failed)">
     <classes>
-      <class name="dependentMethods.DependentMethods">
-        <methods>
-          <include name="testMethod2"/>
-          <include name="testMethod1"/>
-        </methods>
-      </class> <!-- dependentMethods.DependentMethods -->
       <class name="testclasses.TestNGSoftAssert">
         <methods>
           <include name="testSum"/>

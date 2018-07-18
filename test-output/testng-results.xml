@@ -1,29 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="2" total="2" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suit Dependent Methods" duration-ms="7" started-at="2018-07-18T16:33:05Z" finished-at="2018-07-18T16:33:05Z">
+  <suite name="Test Parameters" duration-ms="42" started-at="2018-07-18T17:17:00Z" finished-at="2018-07-18T17:17:00Z">
     <groups>
     </groups>
-    <test name="Dependent Methods" duration-ms="7" started-at="2018-07-18T16:33:05Z" finished-at="2018-07-18T16:33:05Z">
-      <class name="dependentMethods.DependentMethods">
-        <test-method status="PASS" signature="runBeforeSuite()[pri:0, instance:dependentMethods.DependentMethods@482f8f11]" name="runBeforeSuite" is-config="true" duration-ms="15" started-at="2018-07-18T16:33:05Z" finished-at="2018-07-18T16:33:05Z">
+    <test name="Test Parameters" duration-ms="42" started-at="2018-07-18T17:17:00Z" finished-at="2018-07-18T17:17:00Z">
+      <class name="testclasses.TestNG_TestParameters">
+        <test-method status="PASS" signature="SetUp(java.lang.String, java.lang.String)[pri:0, instance:testclasses.TestNG_TestParameters@28feb3fa]" name="SetUp" is-config="true" duration-ms="13" started-at="2018-07-18T17:17:00Z" finished-at="2018-07-18T17:17:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[linux]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runBeforeSuite -->
-        <test-method status="PASS" signature="runOnceBeforeTagTest()[pri:0, instance:dependentMethods.DependentMethods@482f8f11]" name="runOnceBeforeTagTest" is-config="true" duration-ms="0" started-at="2018-07-18T16:33:05Z" finished-at="2018-07-18T16:33:05Z">
+        </test-method> <!-- SetUp -->
+        <test-method status="PASS" signature="test1(java.lang.String)[pri:0, instance:testclasses.TestNG_TestParameters@28feb3fa]" name="test1" duration-ms="6" started-at="2018-07-18T17:17:00Z" finished-at="2018-07-18T17:17:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[201]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runOnceBeforeTagTest -->
-        <test-method status="PASS" signature="runOnceAfterTagTest()[pri:0, instance:dependentMethods.DependentMethods@482f8f11]" name="runOnceAfterTagTest" is-config="true" duration-ms="0" started-at="2018-07-18T16:33:05Z" finished-at="2018-07-18T16:33:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runOnceAfterTagTest -->
-        <test-method status="PASS" signature="runAfterSuite()[pri:0, instance:dependentMethods.DependentMethods@482f8f11]" name="runAfterSuite" is-config="true" duration-ms="0" started-at="2018-07-18T16:33:05Z" finished-at="2018-07-18T16:33:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runAfterSuite -->
-      </class> <!-- dependentMethods.DependentMethods -->
-    </test> <!-- Dependent Methods -->
-  </suite> <!-- Suit Dependent Methods -->
+        </test-method> <!-- test1 -->
+      </class> <!-- testclasses.TestNG_TestParameters -->
+    </test> <!-- Test Parameters -->
+  </suite> <!-- Test Parameters -->
 </testng-results>
