@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Teste</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>4/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Jul 16 20:27:11 BRT 2018</td>
+<td>Started on:</td><td>Wed Jul 18 08:21:15 BRT 2018</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (107 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (198 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,15 +75,23 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='dependentMethods.DependentMethods.testMethod1()'><b>testMethod1</b><br>Test class: dependentMethods.DependentMethods</td>
+<td><div><pre>org.testng.internal.thread.ThreadTimeoutException: Method dependentMethods.DependentMethods.testMethod1() didn&apos;t finish within the time-out 100
+</pre></div><a href='#' onClick='toggleBox("stack-trace215145189", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace215145189'><pre>org.testng.internal.thread.ThreadTimeoutException: Method dependentMethods.DependentMethods.testMethod1() didn&apos;t finish within the time-out 100
+</pre></div></td>
+<td>0</td>
+<td>dependentMethods.DependentMethods@58651fd0</td></tr>
+<tr>
 <td title='testclasses.TestNGSoftAssert.testSum()'><b>testSum</b><br>Test class: testclasses.TestNGSoftAssert</td>
 <td><div><pre>java.lang.AssertionError: The following asserts failed:
 	expected [2] but found [3]
-	at testclasses.TestNGSoftAssert.testSum(TestNGSoftAssert.java:21)
-... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2142003995", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2142003995'><pre>java.lang.AssertionError: The following asserts failed:
+	at testclasses.TestNGSoftAssert.testSum(TestNGSoftAssert.java:22)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1037324811", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1037324811'><pre>java.lang.AssertionError: The following asserts failed:
 	expected [2] but found [3]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
-	at testclasses.TestNGSoftAssert.testSum(TestNGSoftAssert.java:21)
+	at testclasses.TestNGSoftAssert.testSum(TestNGSoftAssert.java:22)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -111,7 +119,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>testclasses.TestNGSoftAssert@9629756</td></tr>
+<td>testclasses.TestNGSoftAssert@735b5592</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -124,17 +132,22 @@ function toggleAllBoxes() {
 <td title='testclasses.TestNGAssert.String()'><b>String</b><br>Test class: testclasses.TestNGAssert</td>
 <td></td>
 <td>0</td>
-<td>testclasses.TestNGAssert@7f9a81e8</td></tr>
+<td>testclasses.TestNGAssert@62ee68d8</td></tr>
 <tr>
 <td title='testclasses.TestNGAssert.array()'><b>array</b><br>Test class: testclasses.TestNGAssert</td>
 <td></td>
 <td>0</td>
-<td>testclasses.TestNGAssert@7f9a81e8</td></tr>
+<td>testclasses.TestNGAssert@62ee68d8</td></tr>
+<tr>
+<td title='dependentMethods.DependentMethods.testMethod2()'><b>testMethod2</b><br>Test class: dependentMethods.DependentMethods</td>
+<td></td>
+<td>0</td>
+<td>dependentMethods.DependentMethods@58651fd0</td></tr>
 <tr>
 <td title='testclasses.TestNGAssert.testeSum()'><b>testeSum</b><br>Test class: testclasses.TestNGAssert</td>
 <td></td>
 <td>0</td>
-<td>testclasses.TestNGAssert@7f9a81e8</td></tr>
+<td>testclasses.TestNGAssert@62ee68d8</td></tr>
 </table><p>
 </body>
 </html>

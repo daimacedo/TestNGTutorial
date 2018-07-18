@@ -8,12 +8,20 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">Suit Dependent Methods</th></tr>
-<tr><td><a href="#t0">Dependent Methods</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">37</td><td></td><td></td></tr>
+<tr><th colspan="7">Teste Suite</th></tr>
+<tr><td><a href="#t0">Teste</a></td><td class="num">4</td><td class="num">0</td><td class="num attn">2</td><td class="num">198</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suit Dependent Methods</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Dependent Methods &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">dependentMethods.DependentMethods</td><td><a href="#m0">testMethod1</a></td><td rowspan="1">1531879575597</td><td rowspan="1">2</td></tr><tr class="passedeven"><td><a href="#m1">testMethod2</a></td><td rowspan="1">1531879575583</td><td rowspan="1">10</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Teste Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Teste &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">dependentMethods.DependentMethods</td><td><a href="#m0">testMethod1</a></td><td rowspan="1">1531912875771</td><td rowspan="1">111</td></tr><tr class="failedodd"><td rowspan="1">testclasses.TestNGSoftAssert</td><td><a href="#m1">testSum</a></td><td rowspan="1">1531912875751</td><td rowspan="1">12</td></tr><tr><th colspan="4">Teste &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">dependentMethods.DependentMethods</td><td><a href="#m2">testMethod2</a></td><td rowspan="1">1531912875768</td><td rowspan="1">1</td></tr><tr class="passedodd"><td rowspan="3">testclasses.TestNGAssert</td><td><a href="#m3">String</a></td><td rowspan="1">1531912875720</td><td rowspan="1">15</td></tr><tr class="passedodd"><td><a href="#m4">array</a></td><td rowspan="1">1531912875739</td><td rowspan="1">3</td></tr><tr class="passedodd"><td><a href="#m5">testeSum</a></td><td rowspan="1">1531912875745</td><td rowspan="1">4</td></tr></tbody>
 </table>
-<h2>Dependent Methods</h2><h3 id="m0">dependentMethods.DependentMethods#testMethod1</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">dependentMethods.DependentMethods#testMethod2</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Teste</h2><h3 id="m0">dependentMethods.DependentMethods#testMethod1</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.internal.thread.ThreadTimeoutException: Method dependentMethods.DependentMethods.testMethod1() didn&apos;t finish within the time-out 100
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testclasses.TestNGSoftAssert#testSum</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
+	expected [2] but found [3]
+	at testclasses.TestNGSoftAssert.testSum(TestNGSoftAssert.java:22)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">dependentMethods.DependentMethods#testMethod2</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">testclasses.TestNGAssert#String</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">testclasses.TestNGAssert#array</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">testclasses.TestNGAssert#testeSum</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -4,6 +4,7 @@
 		<classes>
 			<class name="testclasses.TestNGAssert"></class>
 			<class name="testclasses.TestNGSoftAssert"></class>
+			<class name="dependentMethods.DependentMethods"></class>
 		</classes>
 	</test>
 </suite>
