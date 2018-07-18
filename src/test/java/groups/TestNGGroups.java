@@ -11,13 +11,13 @@ public class TestNGGroups {
 		System.out.println("Before Method running");
 	}
 	
-	@Test(groups = {"cars", "SUV"})
+	@Test(groups = {"cars", "SUV"}, priority=0)
 	public void testHRV()
 	{
 		System.out.println("Running test -> testHRV");
 	}
 	
-	@Test(groups= {"cars", "sedan"})
+	@Test(groups= {"cars", "sedan"}, priority=1)
 	public void testAudiA6()
 	{
 		System.out.println("Running test -> testAudiA6");

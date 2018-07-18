@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name = "Suit Dependent Methods">
+	<test name = "Dependent Methods">
+		<classes>
+			<class name = "dependentMethods.DependentMethods"></class>
+		</classes>
+	</test>
+</suite>
