@@ -18,7 +18,7 @@ public class TestLogin extends SetUp{
 		LoginPage loginPage = new LoginPage(driver);
 		homePage.clickOnLogin();
 		loginPage.sendEmail("daiane.macedo@hotmail.com");
-		loginPage.sendPass("993007");
+		loginPage.sendPass("XXXXXXX");
 		loginPage.clickOnBtnLogin();
 	}
 }
