@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite_paralela">
-              <span class="suite-name border-failed">Suite paralela</span>
+              <span class="suite-name border-passed">Suite paralela</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite_paralela" class="hide-methods failed suite-Suite_paralela"> (hide)</a> <!-- hide-methods failed suite-Suite_paralela -->
-                      <a href="#" panel-name="suite-Suite_paralela" class="show-methods failed suite-Suite_paralela"> (show)</a> <!-- show-methods failed suite-Suite_paralela -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite_paralela">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite_paralela" title="test.TestLogin" hash-for-method="realizarLogin(firefox)">realizarLogin(firefox)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite_paralela -->
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -117,6 +103,11 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite_paralela" title="test.TestLogin" hash-for-method="realizarLogin(chrome)">realizarLogin(chrome)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite_paralela" title="test.TestLogin" hash-for-method="realizarLogin(firefox)">realizarLogin(firefox)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite_paralela -->
@@ -131,47 +122,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite_paralela" class="panel Suite_paralela">
-          <div class="suite-Suite_paralela-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">test.TestLogin</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="realizarLogin(firefox)">
-                  </a> <!-- realizarLogin(firefox) -->
-                  <span class="method-name">realizarLogin</span>
-                  <span class="parameters">(firefox)</span>
-                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: The element reference of &lt;a class=&quot;navbar-link fedora-navbar-link&quot; href=&quot;/sign_in&quot;&gt; is stale; either the element is no longer attached to the DOM, it is not in the current frame context, or the document has been refreshed
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:42:44.417Z&apos;
-System info: host: &apos;dls210&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.5.0-040500-generic&apos;, java.version: &apos;1.8.0_171&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{moz:profile=/tmp/rust_mozprofile.4Rqv45edpA0h, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=LINUX, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=false, browserVersion=60.0.2, platformVersion=4.5.0-040500-generic, moz:processID=16340, browserName=firefox, javascriptEnabled=true, platformName=LINUX, moz:webdriverClick=true}]
-Session ID: f1312252-1553-4b13-b440-5eb5c87f4c26
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:275)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy11.click(Unknown Source)
-	at pages.HomePage.clickOnLogin(HomePage.java:22)
-	at test.TestLogin.realizarLogin(TestLogin.java:19)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-... Removed 24 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite_paralela-class-failed -->
           <div class="suite-Suite_paralela-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -184,6 +134,14 @@ Session ID: f1312252-1553-4b13-b440-5eb5c87f4c26
                   </a> <!-- realizarLogin(chrome) -->
                   <span class="method-name">realizarLogin</span>
                   <span class="parameters">(chrome)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="realizarLogin(firefox)">
+                  </a> <!-- realizarLogin(firefox) -->
+                  <span class="method-name">realizarLogin</span>
+                  <span class="parameters">(firefox)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -254,16 +212,16 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'realizarLogin')
 data.setCell(0, 2, 'test.TestLogin')
-data.setCell(0, 3, 9728);
+data.setCell(0, 3, 6451);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'realizarLogin')
 data.setCell(1, 2, 'test.TestLogin')
-data.setCell(1, 3, 1604);
+data.setCell(1, 3, 5627);
 window.suiteTableData['Suite_paralela']= { tableData: data, tableDiv: 'times-div-Suite_paralela'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 11 seconds</span>
+              <span class="suite-total-time">Total running time: 12 seconds</span>
               <div id="times-div-Suite_paralela">
               </div> <!-- times-div-Suite_paralela -->
             </div> <!-- times-div -->
@@ -290,23 +248,21 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">test.TestLogin</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">setUp(firefox)</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="configuration-test before">
+              <div class="configuration-class before">
                 <span class="method-name">setUp(chrome)</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-test before -->
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(firefox)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">realizarLogin(chrome)</span>
-                <span class="method-start">9394 ms</span>
+                <span class="method-start">5271 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">realizarLogin(firefox)</span>
-                <span class="method-start">13132 ms</span>
+                <span class="method-start">14659 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -9,7 +9,7 @@ public class HomePage{
 
 	WebDriver driver;
 	
-	@FindBy(linkText="Login")
+	@FindBy(xpath="//a[@href='/sign_in']")
 	WebElement linkLogin;
 	
 	public HomePage(WebDriver driver) {
