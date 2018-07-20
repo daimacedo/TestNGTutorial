@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 
 public class TestNG_TestParameters {
 	
+	// Is not possible to run using parameters from java class, we need to run clicking on xml.config
 	@Parameters({"browser","SO"})
 	@BeforeClass
 	public void SetUp(String _browser, String _SO)	{
