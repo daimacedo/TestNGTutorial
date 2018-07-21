@@ -1,61 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite paralela" duration-ms="21128" started-at="2018-07-20T15:53:34Z" finished-at="2018-07-20T15:53:55Z">
+  <suite name="Default suite" duration-ms="37" started-at="2018-07-21T19:30:51Z" finished-at="2018-07-21T19:30:51Z">
     <groups>
     </groups>
-    <test name="Teste Paralelo1" duration-ms="10909" started-at="2018-07-20T15:53:34Z" finished-at="2018-07-20T15:53:45Z">
-      <class name="test.TestLogin">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:test.TestLogin@69b0fd6f]" name="setUp" is-config="true" duration-ms="5260" started-at="2018-07-20T15:53:34Z" finished-at="2018-07-20T15:53:39Z">
+    <test name="Default test" duration-ms="37" started-at="2018-07-21T19:30:51Z" finished-at="2018-07-21T19:30:51Z">
+      <class name="test.DataProvider">
+        <test-method status="PASS" signature="testDataProvider(java.lang.String, java.lang.String)[pri:0, instance:test.DataProvider@44c8afef]" name="testDataProvider" duration-ms="8" started-at="2018-07-21T19:30:51Z" data-provider="inputs" finished-at="2018-07-21T19:30:51Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[Citroen]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[c3]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="realizarLogin(java.lang.String)[pri:0, instance:test.TestLogin@69b0fd6f]" name="realizarLogin" duration-ms="5627" started-at="2018-07-20T15:53:39Z" finished-at="2018-07-20T15:53:45Z">
+        </test-method> <!-- testDataProvider -->
+        <test-method status="PASS" signature="testDataProvider(java.lang.String, java.lang.String)[pri:0, instance:test.DataProvider@44c8afef]" name="testDataProvider" duration-ms="1" started-at="2018-07-21T19:30:51Z" data-provider="inputs" finished-at="2018-07-21T19:30:51Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[VW]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Jetta]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- realizarLogin -->
-      </class> <!-- test.TestLogin -->
-    </test> <!-- Teste Paralelo1 -->
-    <test name="Teste Paralelo2" duration-ms="21128" started-at="2018-07-20T15:53:34Z" finished-at="2018-07-20T15:53:55Z">
-      <class name="test.TestLogin">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:test.TestLogin@3891771e]" name="setUp" is-config="true" duration-ms="14657" started-at="2018-07-20T15:53:34Z" finished-at="2018-07-20T15:53:49Z">
+        </test-method> <!-- testDataProvider -->
+        <test-method status="PASS" signature="testDataProvider(java.lang.String, java.lang.String)[pri:0, instance:test.DataProvider@44c8afef]" name="testDataProvider" duration-ms="1" started-at="2018-07-21T19:30:51Z" data-provider="inputs" finished-at="2018-07-21T19:30:51Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[firefox]]>
+                <![CDATA[Honda]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Civic]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="realizarLogin(java.lang.String)[pri:0, instance:test.TestLogin@3891771e]" name="realizarLogin" duration-ms="6451" started-at="2018-07-20T15:53:49Z" finished-at="2018-07-20T15:53:55Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- realizarLogin -->
-      </class> <!-- test.TestLogin -->
-    </test> <!-- Teste Paralelo2 -->
-  </suite> <!-- Suite paralela -->
+        </test-method> <!-- testDataProvider -->
+      </class> <!-- test.DataProvider -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

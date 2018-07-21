@@ -8,6 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 public class LoginPage {
 
 	WebDriver driver;
+	String nome = "Daiane";
 	
 	@FindBy(id="user_email")
 	WebElement txtLogin;
@@ -23,16 +24,22 @@ public class LoginPage {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void sendEmail(String email) {
+	public LoginPage sendEmail(String email) {
 		txtLogin.sendKeys(email);
+		return this;
 	}
 	
-	public void sendPass(String pass){
+	public LoginPage sendPass(String pass){
 		txtPass.sendKeys(pass);
+		return this;
 	}
 	
-	public void clickOnBtnLogin()
+	public LoginPage clickOnBtnLogin()
 	{
 		btnLogin.click();
+		return this;
 	}
+
+	
+
 }
