@@ -1,13 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite paralela]" parallel="tests">
+  <test thread-count="2" name="Teste Paralelo1(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="test.TestLogin">
+        <methods>
+          <include name="setUp"/>
+          <include name="realizarLogin"/>
+        </methods>
+      </class> <!-- test.TestLogin -->
+    </classes>
+  </test> <!-- Teste Paralelo1(failed) -->
   <test thread-count="2" name="Teste Paralelo2(failed)" parallel="tests">
     <parameter name="browser" value="firefox"/>
     <classes>
       <class name="test.TestLogin">
         <methods>
           <include name="setUp"/>
-          <include name="realizarLogin" invocation-numbers="0"/>
+          <include name="realizarLogin"/>
         </methods>
       </class> <!-- test.TestLogin -->
     </classes>

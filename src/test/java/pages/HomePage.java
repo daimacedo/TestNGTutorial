@@ -17,8 +17,9 @@ public class HomePage{
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void clickOnLogin()
+	public LoginPage clickOnLogin()
 	{
 		linkLogin.click();
+		return new LoginPage(driver);
 	}
 }

@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite paralela]" parallel="tests">
-  <test thread-count="2" name="Teste Paralelo2(failed)" parallel="tests">
-    <parameter name="browser" value="firefox"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.TestLogin">
+      <class name="test.TestNG_TestResult">
         <methods>
-          <include name="setUp"/>
-          <include name="realizarLogin" invocation-numbers="0"/>
+          <include name="method1"/>
+          <include name="afterMethod"/>
         </methods>
-      </class> <!-- test.TestLogin -->
+      </class> <!-- test.TestNG_TestResult -->
     </classes>
-  </test> <!-- Teste Paralelo2(failed) -->
-</suite> <!-- Failed suite [Suite paralela] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
