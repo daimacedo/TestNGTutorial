@@ -10,7 +10,7 @@ import listeners.Listener_ITestListener;
 
 public class Test_ITestListener {
 
-@Listeners(Listener_ITestListener.class)
+//@Listeners(Listener_ITestListener.class)
 	public class TestNG_ListenersTest {
 
 		@BeforeClass

@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Listeners TestSuite]">
+  <listeners>
+    <listener class-name="listeners.Listener_ITestListener"/>
+    <listener class-name="listeners.Listener_ISuiteListener"/>
+  </listeners>
   <test thread-count="5" name="Application Test 1(failed)">
     <classes>
-      <class name="test.ITestListener_Test$TestNG_ListenersTest">
+      <class name="testListeners.Test_ITestListener$TestNG_ListenersTest">
         <methods>
-          <include name="beforeClass"/>
-          <include name="testTwo"/>
           <include name="testThree"/>
+          <include name="testTwo"/>
+          <include name="beforeClass"/>
         </methods>
-      </class> <!-- test.ITestListener_Test$TestNG_ListenersTest -->
+      </class> <!-- testListeners.Test_ITestListener$TestNG_ListenersTest -->
     </classes>
   </test> <!-- Application Test 1(failed) -->
 </suite> <!-- Failed suite [Listeners TestSuite] -->

@@ -1,8 +1,12 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Listeners TestSuite">
+	<listeners>
+		<listener class-name="listeners.Listener_ITestListener"></listener>
+		<listener class-name="listeners.Listener_ISuiteListener"></listener>
+	</listeners>
 	<test name="Application Test 1">
 		<classes>
-			<class name="test.ITestListener_Test"></class>
+			<class name="testListeners.Test_ITestListener"></class>
 		</classes>
 	</test>
 </suite>
