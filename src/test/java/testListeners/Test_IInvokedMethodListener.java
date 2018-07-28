@@ -1,14 +1,14 @@
-package test;
+package testListeners;
 
 import org.junit.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import listeners.Listener1;
+import listeners.Listener_IInvokedMethodListener;
 
-@Listeners(Listener1.class)
-public class TestNG_ListenersTest {
+@Listeners(Listener_IInvokedMethodListener.class)
+public class Test_IInvokedMethodListener {
 	
 	@BeforeClass
 	public void beforeClass(){

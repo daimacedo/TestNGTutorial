@@ -4,7 +4,7 @@ import org.testng.IInvokedMethod;
 import org.testng.IInvokedMethodListener;
 import org.testng.ITestResult;
 
-public class Listener1 implements IInvokedMethodListener{
+public class Listener_IInvokedMethodListener implements IInvokedMethodListener{
 
 	
 

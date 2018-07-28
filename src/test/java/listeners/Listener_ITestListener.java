@@ -5,7 +5,7 @@ import org.testng.ITestListener;
 import org.testng.ITestNGMethod;
 import org.testng.ITestResult;
 
-public class TestNG_ITestListener implements ITestListener{
+public class Listener_ITestListener implements ITestListener{
 
 	public void onTestStart(ITestResult result) {
 		System.out.println("onTestStart: Test Name -> " + result.getMethod().getMethodName());

@@ -1,4 +1,4 @@
-package test;
+package testListeners;
 
 import org.junit.AfterClass;
 import org.testng.Assert;
@@ -6,11 +6,11 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import listeners.TestNG_ITestListener;
+import listeners.Listener_ITestListener;
 
-public class ITestListener_Test {
+public class Test_ITestListener {
 
-@Listeners(TestNG_ITestListener.class)
+@Listeners(Listener_ITestListener.class)
 	public class TestNG_ListenersTest {
 
 		@BeforeClass
